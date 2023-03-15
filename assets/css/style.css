@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.slider{
+    height: 500px;
+    background-image:url('../images/coffee.jpg') ;
+    background-size: cover;
+    background-position: center;
+    /* animation properties */
+    animation-name: myslider;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes myslider
+{
+    from{
+            background-image: url('../images/coffee.jpg');
+    }
+    to{
+        background-image: url('../images/laptop.jpg');
+    }
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: absolute;
+
+    /* animation property */
+    animation-name: sms;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes sms{
+
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 200px;
+        top: 0;
+        background-color: darkorange;      
+        transform: rotate(40deg);  
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        background-color: yellowgreen;
+        transform: rotate(80deg);
+    }
+    75%{
+            top: 200px;
+            left: 0;
+            background-color: tomato;
+            transform: rotate(190deg);
+            border-radius: 50%;
+    }
+    100%{
+            left: 0;
+            top:0;
+
+    }
+
+}
