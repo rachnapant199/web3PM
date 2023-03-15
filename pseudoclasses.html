@@ -1,0 +1,182 @@
+<!-- 
+
+    :hover 
+    :before 
+    :after 
+    :first-line
+    :first-child
+    :last-child
+    :nth-child
+    :first-letter
+    :focus 
+
+    _________________________________________________________________
+    display : inline 
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .heading {
+            font-family: 'Raleway', sans-serif;
+            color: yellowgreen
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        .nav {
+            /* height: 80px; */
+            background-color: greenyellow;
+            padding: 10px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+        }
+
+        .nav li {
+            display: inline;
+            padding: 20px;
+            /* padding-left: 30px; */
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav li:hover {
+            background-color: black;
+
+        }
+
+        .nav li:hover a {
+            color: white;
+        }
+
+        .slider {
+            height: 500px;
+            background-image: url('assets/images/laptop.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slider:hover {
+            background-image: url('assets/images/4.webp');
+        }
+
+        p:before {
+            content: 'Welcome';
+        }
+
+        p:after {
+            content: 'End of the Para';
+        }
+
+        p::first-line {
+            background-color: darkred;
+            color: white;
+        }
+
+        p::first-letter {
+            font-size: 90px;
+            color: darkcyan;
+            font-weight: 900;
+            font-family: 'Raleway', sans-serif;
+            ;
+        }
+
+        .mylist li:first-child {
+            color: red;
+        }
+
+        .mylist li:last-child {
+            font-size: 90px;
+        }
+
+        .mylist li:nth-child(3) {
+            font-size: 32px;
+            color: greenyellow;
+            font-weight: 900;
+            font-family: 'Raleway', sans-serif;
+            
+        }
+        :focus{
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li> Logo </li>
+            <li> <a href=""> HOME </a> </li>
+            <li> <a href="">About</a> </li>
+            <li> <a href="">Services</a> </li>
+            <li> <a href=""> Contact </a> </li>
+            <li> <a href="">About</a> </li>
+            <li> <a href="">Services</a> </li>
+            <li> <a href=""> Contact </a> </li>
+            <li> <input type="search" name="" id=""> </li>
+        </ul>
+    </div>
+    <div class="slider">
+
+    </div>
+    <h1> Welcome to the Web Development Company </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum beatae officiis tempora esse id ullam
+        pariatur recusandae delectus nihil cupiditate quia, officia est fuga optio at aut repudiandae eius!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis temporibus nisi libero nam, quaerat
+        repellat doloremque quod totam, optio eveniet in minus commodi atque pariatur? Libero dicta odit cupiditate
+        iusto!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, a. Recusandae distinctio quia cum. Consequuntur
+        ea tempore, libero nulla esse ullam, aliquid ad quasi quibusdam dicta perspiciatis tenetur, veniam dolorum.
+    </p>
+    <div class="mylist">
+        <ul>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+
+        </ul>
+    </div>
+</body>
+</html>

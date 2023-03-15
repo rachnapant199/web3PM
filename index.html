@@ -1,129 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
+    :hover 
+    :before 
+    :after 
+    :first-line
+    :first-child
+    :last-child
+    :nth-child
+    :first-letter
+    :focus 
 
-<body>
+    _________________________________________________________________
+    display : inline 
 
-    <li> <a href="#day1"> DAY1 </a> </li>
-    <li> <a href="#day2"> DAY2 </a> </li>
-    <li> <a href="#day3"> DAY3 </a> </li>
-    <li> <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)#Components"> DAY4 </a> </li>
+ -->
 
 
-    <h1 id="day"> Days </h1>
-    <ol>
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-    </ol>
 
-    <h1 id="day2"> Days with Lower Roman </h1>
-    <ol style="list-style-type:lower-roman">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-
-    </ol>
-    <h1 id="day3"> Days with upper Roman </h1>
-    <ol style="list-style-type:upper-roman">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-
-    </ol>
-    <h1 id="day4"> Days with Upper Alpha</h1>
-    <ol style="list-style-type:upper-alpha">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-
-    </ol>
-    <ol style="list-style-type:lower-alpha">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-    </ol>
-    <h1> Un-ordered List </h1>
-    <ul>
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-    </ul>
-    <ul style="list-style-type:square">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-    </ul>
-    <ul style="list-style-type:circle">
-        <li> Sunday </li>
-        <li> Monday </li>
-        <li> Tuesday </li>
-        <li> Wednesday </li>
-        <li> Thursday </li>
-    </ul>
-    <h1> Definition List </h1>
-    <dl>
-        <dt> What is HTML5? </dt>
-        <dd> HTML is Hypertext Markup Language </dd>
-        <dt> What is HTML5? </dt>
-        <dd> HTML is Hypertext Markup Language </dd>
-        <dt> What is HTML5? </dt>
-        <dd> HTML is Hypertext Markup Language </dd>
-    </dl>
-
-    <h1> IT Courses </h1>
-    <ul>
-        <li>
-            CS/IT/BCA/MCA
-            <ul>
-                <li> Data Science
-                    <ul>
-                        <li> Data Science With Python </li>
-                        <li> Data Analytics </li>
-                    </ul>
-                </li>
-            </ul>
-
-        </li>
-    </ul>
-    <h1> Linking </h1>
-    <a href="https://www.google.com"> Google </a>
-    <br>
-    <a href="https://www.google.com" target="_blank"> Google </a>
-    <br>
-    <a href="#" target="_top"> Go To Top </a>
-    <h3> Absolute URL </h3>
-    <a href="https://www.instagram.com/shapemyskillsofficial/" target="_blank"> SMS </a>
-
-    <h3> Relative URL </h3>
-    <a href="https://www.instagram.com/" target="_blank"> Search For SMS </a>
-
-
-</body>
-
-</html>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+ 
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6,
+         .heading {
+             font-family: 'Raleway', sans-serif;
+             color: yellowgreen
+         }
+ 
+         body {
+             font-family: 'Open Sans', sans-serif;
+             margin: 0;
+         }
+ 
+         h2 {
+             color: darkgreen;
+         }
+ 
+         .nav {
+             /* height: 80px; */
+             background-color: greenyellow;
+             padding: 10px;
+         }
+ 
+         .nav ul {
+             list-style-type: none;
+         }
+ 
+         .nav li {
+             display: inline;
+             padding: 20px;
+             /* padding-left: 30px; */
+         }
+ 
+         .nav a {
+             text-decoration: none;
+             font-weight: 700;
+         }
+ 
+         .nav li:hover {
+             background-color: black;
+ 
+         }
+ 
+         .nav li:hover a {
+             color: white;
+         }
+ 
+         .slider {
+             height: 500px;
+             background-image: url('assets/images/laptop.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+         }
+ 
+         .slider:hover {
+             background-image: url('assets/images/4.webp');
+         }
+ 
+         p:before {
+             content: 'Welcome';
+         }
+ 
+         p:after {
+             content: 'End of the Para';
+         }
+ 
+         p::first-line {
+             background-color: darkred;
+             color: white;
+         }
+ 
+         p::first-letter {
+             font-size: 90px;
+             color: darkcyan;
+             font-weight: 900;
+             font-family: 'Raleway', sans-serif;
+             ;
+         }
+ 
+         .mylist li:first-child {
+             color: red;
+         }
+ 
+         .mylist li:last-child {
+             font-size: 90px;
+         }
+ 
+         .mylist li:nth-child(3) {
+             font-size: 32px;
+             color: greenyellow;
+             font-weight: 900;
+             font-family: 'Raleway', sans-serif;
+             
+         }
+         :focus{
+             color: red;
+             background-color: black;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <div class="nav">
+         <ul>
+             <li> Logo </li>
+             <li> <a href="audiovideo.html"> A/V </a> </li>
+             <li> <a href="border.html">Border</a> </li>
+             <li> <a href="FirstCSS.html">First CSS</a> </li>
+             <li> <a href="font.html"> Font  </a> </li>
+             <li> <a href="form.html">Form</a> </li>
+             <li> <a href="images.html"> Images </a> </li>
+             <li> <a href="nestedtable.html"> Nested Table </a> </li>
+             
+         </ul>
+     </div>
+     <div class="slider">
+ 
+     </div>
+    
+ </body>
+ </html>

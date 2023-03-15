@@ -1,0 +1,105 @@
+CSS : Cascading Style Sheet, which is used to style our html document.
+Types of CSS 
+1. Inline 
+2. Interal 
+3. External
+
+
+Inline CSS: It is used with a tag only. It cannot be reused.
+Syntax:
+    <p style="property : value; "> </p> 
+______________________________________________________________________________
+Interal CSS : It is used for a page only.We write CSS in style tag inside head tag
+Syntax:
+<head>
+        <style>
+            p{
+                ....
+            }
+        </style>
+</head>
+______________________________________________________________________________
+External CSS : It can be used with more than one html document. And External CSS is written in sperate file whch is save with .css extension.
+
+WE can include this file using following syntax:
+
+<link rel="stylesheet" href="link of External css " >
+________________________________________________________________________________________________
+
+
+Selectors :
+1. Element Selector [Tag Selector]
+2. Class Selector
+3. ID Selector
+4. Universal Selector
+
+1. Element Selector
+    h1
+    {
+        property : value;
+        ....
+        ....
+        ...
+    }
+
+2. Class Selector: Class can be created with .(dot) sing before class name.
+
+Syntax:
+    .ab{
+        property:value ;
+        ...
+        ...
+    }
+How can we use this in out HTML document.
+
+        <p class="ab"> </p>
+
+NOTE :  We can use a class as many times we want .
+3. ID Selector: ID can be created with #(Hash) sing before ID name.
+
+Syntax 👍
+#idName{
+    property:value;
+    ...
+    ....    
+}
+NOTE: We cannot use same Id with multiple Elements.
+
+4. Universal Selector: 
+*{
+    property:value;
+    ...
+    ...
+}
+________________________________________________________________________________________________
+
+Priority of CSS
+    Inline > Interal > External
+
+Selecot Priority
+    id > class > Element 
+    ______________________________________________________________________________
+    ______________________________________________________________________________
+
+Text property
+color
+text-align          [left , right , center , justify]
+text-decoration     [none, underline , overline line-through]
+word-spacing    
+letter-spacing  
+text-transform      [none, capitalize, lowecase, uppercase]
+
+Font-Properties
+
+    font-size
+    font-family
+    font-weight [100 - 900, bolder , bold]
+    font-style
+    font-display
+    ...
+    
+
+
+
+
+

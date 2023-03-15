@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table </title>
+</head>
+<body>
+  <!-- 
+
+    <table> </table> : Containe<r tag for creating table 
+    <tr> </tr>  : for Table Row
+    <td> </td> :  Table Data 
+    <th> </th> :  Table Heading 
+
+    Table tag Attributes : border , width , height , cellspacing , cellpadding
+                            align 
+    <thead> </thead> : For Table Header 
+    <tbody> </tbody> : For Table Body
+    <tfoot> </tfoot> : Table Footer
+
+    th or td :
+    Attribute
+        rowspan 
+        colspan
+
+   -->
+    <table border="4" width="50%" align="center" height="500px">
+        <thead align="center">
+            <tr>
+                <th> ID </th>
+                <th> NAME </th>
+                <th>CITY</th>
+            </tr>
+        </thead>
+        <tbody align="center" bgcolor="pink">
+            <tr>
+                <td>1</td>
+                <td>Pranjal</td>
+                <td>Noida</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Akash</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vikas Shrama</td>
+                <td rowspan="2"> Mumbai </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> Abhishek </td>
+                
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td colspan="3"> <h5> Copyright &copy; 2023 || Designed by 3PM Batch </h5> </td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1 align="center">Image Gallery </h1>
+    <table border="1" width="70%" align="center"> 
+        <tr>
+            <td>
+                 <img src="assets/images/aries.jpg" alt=""> 
+                 <p> Zodiac Sign 1 </p>
+            </td>
+            <td> <img src="assets/images/taurus.jpg" alt="">
+                <p> Zodiac Sign 2</p>
+            </td>
+            <td> <img src="assets/images/taurus.jpg" alt=""> </td>
+        </tr>
+    </table>
+
+    <!-- 
+
+        Employee Data 
+        id
+        Name
+        City
+        Department 
+        image
+        LinkedIn Profile
+
+
+     -->
+
+</body>
+</html>
